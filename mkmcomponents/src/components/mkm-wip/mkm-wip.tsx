@@ -2,7 +2,7 @@ import { Component, /*Prop,*/ h} from '@stencil/core';
 @Component({
 	tag: "mkm-wip",
 	styleUrl: "mkm-wip.scss",
-	// shadow: true
+	shadow: true
 })
 
 export class MkmWip{
