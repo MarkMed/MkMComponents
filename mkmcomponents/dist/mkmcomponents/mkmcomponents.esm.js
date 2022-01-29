@@ -1,0 +1,1 @@
+import{p,b as m}from"./p-bf683b30.js";(()=>{const m=import.meta.url,r={};return""!==m&&(r.resourcesUrl=new URL(".",m).href),p(r)})().then((p=>m([["p-31407557",[[1,"mkm-wip"]]]],p)));
