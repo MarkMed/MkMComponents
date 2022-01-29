@@ -1,0 +1,25 @@
+@import "../commons/mixins.scss";
+@import "../commons/stlylesVariables.scss";
+mkm-wip{
+	position: fixed;
+	width: 150px;
+	height: 150px;
+	bottom: 0;
+	right: 0;
+	@include displayFlex(row, center, center, wrap, 0);
+	aside{
+		@include displayFlex(row, center, center, wrap, 0);
+		padding: 20px;
+		transform: rotate(-45deg);
+		span{
+			@include displayFlex(row, center, center, wrap, 0);
+			width: 250px;
+			height: 20px;
+			padding: 20px;
+			background-color: $redColor;
+			@extend %shadow-1;
+			color: $clearColor;
+		}
+	}
+
+}
