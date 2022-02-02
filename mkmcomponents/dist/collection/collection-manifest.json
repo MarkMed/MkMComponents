@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "./components/mkm-star-rating/mkm-star-rating.js",
+    "./components/mkm-wip/mkm-wip.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.13.0",
+    "typescriptVersion": "4.3.5"
+  },
+  "collections": [],
+  "bundles": []
+}

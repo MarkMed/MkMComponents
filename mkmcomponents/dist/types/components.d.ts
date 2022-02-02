@@ -6,10 +6,21 @@
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 export namespace Components {
+    interface MkmStarRating {
+        "currentRate": number;
+        "maxStars": number;
+        "starsColor": string;
+    }
     interface MkmWip {
     }
 }
 declare global {
+    interface HTMLMkmStarRatingElement extends Components.MkmStarRating, HTMLStencilElement {
+    }
+    var HTMLMkmStarRatingElement: {
+        prototype: HTMLMkmStarRatingElement;
+        new (): HTMLMkmStarRatingElement;
+    };
     interface HTMLMkmWipElement extends Components.MkmWip, HTMLStencilElement {
     }
     var HTMLMkmWipElement: {
@@ -17,13 +28,20 @@ declare global {
         new (): HTMLMkmWipElement;
     };
     interface HTMLElementTagNameMap {
+        "mkm-star-rating": HTMLMkmStarRatingElement;
         "mkm-wip": HTMLMkmWipElement;
     }
 }
 declare namespace LocalJSX {
+    interface MkmStarRating {
+        "currentRate"?: number;
+        "maxStars"?: number;
+        "starsColor"?: string;
+    }
     interface MkmWip {
     }
     interface IntrinsicElements {
+        "mkm-star-rating": MkmStarRating;
         "mkm-wip": MkmWip;
     }
 }
@@ -31,6 +49,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "mkm-star-rating": LocalJSX.MkmStarRating & JSXBase.HTMLAttributes<HTMLMkmStarRatingElement>;
             "mkm-wip": LocalJSX.MkmWip & JSXBase.HTMLAttributes<HTMLMkmWipElement>;
         }
     }
