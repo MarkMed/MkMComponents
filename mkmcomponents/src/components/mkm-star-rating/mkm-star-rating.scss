@@ -1,0 +1,19 @@
+@import "../commons/mixins.scss";
+@import "../commons/stlylesVariables.scss";
+:host{
+	// background-color: blue;
+	div{
+		height: 100%;
+		@include displayFlex(row, center, center, wrap, 0);
+		// background-color: red;
+		svg{
+			// NEXT > Add hover effect
+			height: 100%;
+			flex: 1;
+			cursor: pointer;
+			&.deactive{
+				opacity: 0.2;
+			}
+		}
+	}
+}
